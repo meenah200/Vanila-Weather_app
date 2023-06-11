@@ -29,6 +29,7 @@ function displayTemperature(response){
   let windElement = document.querySelector("#wind");
   let feelLikeElement = document.querySelector("#feel-like");
   let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
 
   temperatureElement.innerHTML = `${tempDisplay}`;
   cityElement.innerHTML = `${cityDisplay}`;
@@ -37,8 +38,8 @@ function displayTemperature(response){
   windElement.innerHTML = `${windDisplay}Km/h`;
   feelLikeElement.innerHTML =`${feelsLikeDisplay}%`;
   dateElement.innerHTML = formatDate(response.data.dt*1000);
-
-  console.log(response);
+  iconElement.setAttribute(
+    "src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 let apiKey="5a66dc5142bfcd987e8299c75e3b7ea3";
 let city="Lagos"

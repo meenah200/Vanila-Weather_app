@@ -28,18 +28,20 @@
         </form>
   <div class="row overview">
     <div class="col-6">
-      <h1 id="city"></h1>
+      <div class="location">
+        <h1 id="city"></h1>
+      </div>
       <ul>
         <li>Last updated: <span id="date"></span></li>
         <li id="description"></li>
       </ul>
     </div>
     <div class="col-6 weather-temperature">
-      <div class="weather-temp">
+      <div class="d-flex weather-temp">
         <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="thunderstorm-rain"
-          id="icon">
+          class="float-left" id="icon">
       </div>
-      <div class="float-right">
+      <div>
 <strong id="temperature"></strong><span class="units"><a href="#">°C</a>|<a href="#">°F</a></span></div>
       </div>
       </div>

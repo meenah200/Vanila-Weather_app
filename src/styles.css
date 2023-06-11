@@ -21,7 +21,7 @@ text-transform: capitalize;
 }
 
 .weather-app-wrapper{
-  max-width:600px;
+  max-width:500px;
   margin:40px auto;
 }
 
@@ -48,9 +48,9 @@ justify-content:flex-end;
 }
 
 .weather-temp img {
+  margin-right:5px;
   height: 64px;
   width: 64px;
-  max-width: 60%;
 }
 .form-search{
 margin-top:10px;
@@ -63,4 +63,7 @@ padding:5px;
 .overview{
   margin-bottom:20px;
   padding:5px;
+}
+.location{
+  margin-bottom:-10px;
 }
