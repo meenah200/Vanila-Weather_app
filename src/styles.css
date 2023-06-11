@@ -18,7 +18,7 @@ li{
 }
 
 .wrapper{
-  max-width:40%;
+  max-width:400px;
   margin:40px;
 }
 
@@ -33,17 +33,22 @@ li{
   height: 64px;
   width:64px;
 }
+.weather-temperature{
+display: flex;
+justify-content:flex-end;
+}
 
-.weather-temp strong{
-  display:inline;
+.weather-temperature strong{
   color:#000000;
   font-size:40px;
   font-weight: 200px;
-  line-height: 1px;
+  line-height: 1;
 }
-
-.weather-temp .units{
+.weather-temperature .units{
   position:relative;
   top:-20px;
   font-size: 14px;
+}
+.forecast{
+  border: ;
 }
