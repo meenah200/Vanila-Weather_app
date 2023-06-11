@@ -37,12 +37,27 @@ function displayTemperature(response){
   humidityElement.innerHTML = `${humidityDisplay}%`;
   windElement.innerHTML = `${windDisplay}Km/h`;
   feelLikeElement.innerHTML =`${feelsLikeDisplay}%`;
-  dateElement.innerHTML = formatDate(response.data.dt*1000);
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-}
-let apiKey="5a66dc5142bfcd987e8299c75e3b7ea3";
-let city="Lagos"
-let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&lat={lat}&lon={lon}&appid=${apiKey}&units=metric`
+  iconElement.setAttribute(
+    "alt", response.data.weather[0].description
+  )
+  }
 
+function search(city){
+let apiKey="5a66dc5142bfcd987e8299c75e3b7ea3";
+let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&lat={lat}&lon={lon}&appid=${apiKey}&units=metric`
 axios.get(apiUrl).then(displayTemperature);
+
+}
+
+function handleSubmit(event){
+  event.preventDefault()
+  let searchInputElement = document.querySelector("#search-input");
+  search(searchInputElement.value);
+}
+search("Lagos");
+
+let form = document.querySelector("#form-search");
+form.addEventListener("submit", handleSubmit);

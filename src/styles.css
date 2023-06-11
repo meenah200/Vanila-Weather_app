@@ -3,7 +3,7 @@ body{
 }
 h1 {
   color:#000000;
-  font-size: 40px;
+  font-size: 30px;
   font-weight:600;
 }
 ul{
@@ -37,13 +37,13 @@ justify-content:flex-end;
 
 .weather-temperature strong{
   color:#000000;
-  font-size:60px;
+  font-size:50px;
   font-weight: 200px;
   line-height: 1;
 }
 .weather-temperature .units{
   position:relative;
-  top:-30px;
+  top:-25px;
   font-size: 14px;
 }
 
