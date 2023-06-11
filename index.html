@@ -11,27 +11,27 @@
 </head>
 <body>
   <div class="container">
-    <div class="wrapper">
+    <div class="weather-app-wrapper">
       <div class="weather-app">
-        <form class="search-form">
+        <form class="mb-3 form-search" id="search-form">
           <div class="row">
-            <div class="col-6">
+            <div class="col-9">
               <input type="search" class="form-control" placeholder="Search for city..." name="search-city" id="search-input"
                 autofocus="on" autocomplete="off">
             </div>
-            <div class="col-2">
-              <button class="btn btn-primary btn" type="button" id="button-addon2">Search</button>
+            <div class="col-3">
+              <button class="btn btn-primary w-100 btn" type="button" id="button-addon2">Search</button>
             </div>    
           </div>
         </form>
-  <div class="row">
+  <div class="row overview">
     <div class="col-6">
       <h1>
         Lagos,Nigeria
       </h1>
       <ul>
         <li>Friday 03:11</li>
-        <li>Clear</li>
+        <li>Light Thunderstorm-rain</li>
       </ul>
     </div>
     <div class="col-6 weather-temperature">
@@ -39,8 +39,8 @@
   </div>
    <div class="row">
     <div class="col-sm-6">
-      <div class="weather-temp">
-      <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" alt="clear-sky">
+      <div class="d-flex weather-temp">
+      <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/thunderstorm-day.png" alt="thunderstorm-rain" class="float-left">
     </div>
     </div>
     <div class="col-6 forecast">
@@ -54,8 +54,10 @@
     </div>
    </div>
    </div>
-    <small>This code was <a href="https://github.com/meenah200/Vanila-Weather_app">Open-sourced</a> on Github, by Odenike
-      Aminat </small>
+    <small>
+      This code was <a href="https://github.com/meenah200/Vanila-Weather_app">Open-sourced</a> on Github, by Odenike
+      Aminat 
+    </small>
     </div>
   </div>
   <script src="src/scripts.js"></script>
