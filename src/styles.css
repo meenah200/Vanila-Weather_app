@@ -56,6 +56,20 @@ justify-content:flex-end;
   height: 64px;
   width: 64px;
 }
+
+.weather-forecast {
+  text-align: center;
+  color: #000000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+
 .form-search{
 margin-top:10px;
 padding:5px;
@@ -71,3 +85,8 @@ padding:5px;
 .location{
   margin-bottom:-10px;
 }
+
+.cast{
+  background-color: #78c8e0;
+  border-radius:45%
+  }

@@ -42,7 +42,7 @@
           class="float-left" id="icon">
       </div>
       <div>
-<strong id="temperature"></strong><span class="units"><a href="#" id="celcius-link">°C</a>|<a href="#" id="fahrenheit-link">°F</a></span></div>
+<strong id="temperature"></strong><span class="units"><a href="#" id="celcius-link" class="celcius">°C</a>|<a href="#" id="fahrenheit-link" class="fahrenheit">°F</a></span></div>
       </div>
       </div>
    <div class="row justify-content-center content">
@@ -62,20 +62,56 @@
       </ul>
     </div>
    </div>
-   <div class="row weather-forecast">
-   <div class="col-2">
-    <div>Sunday</div> 
-    <img src="https://openweathermap.org/img/wn/04n@2x.png" width="50px">
-    <div>
-      <small><span>27°C</span> </small>
-      <small><span>31°C</span></small>
+  <div class="row weather-forecast" id="forecast">
+    <div class="col-2 cast">
+      <div class="weather-forecast-date">Sun</div>
+      <img src="https://openweathermap.org/img/wn/04n@2x.png" width="50px" />
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temp-max">27°</span>
+        <span class="weather-forecast-temp-min">31°</span>
+      </div>
     </div>
-   </div>
-
-   <div class="col-2"></div>
-   <div class="col-2"></div>
-   <div class="col-2"></div>
-   <div class="col-2"></div>
+  
+    <div class="col-2 cast">
+      <div class="weather-forecast-date">Mon</div>
+      <img src="https://openweathermap.org/img/wn/04n@2x.png" width="50px" />
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temp-max">27°</span>
+        <span class="weather-forecast-temp-min">31°</span>
+      </div>
+    </div>
+    <div class="col-2 cast">
+      <div class="weather-forecast-date">Tues</div>
+      <img src="https://openweathermap.org/img/wn/04n@2x.png" width="50px" />
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temp-max">27°</span>
+        <span class="weather-forecast-temp-min">31°</span>
+      </div>
+    </div>
+    <div class="col-2 cast">
+      <div class="weather-forecast-date">Wed</div>
+      <img src="https://openweathermap.org/img/wn/04n@2x.png" width="50px" />
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temp-max">27°</span>
+        <span class="weather-forecast-temp-min">31°</span>
+      </div>
+    </div>
+    <div class="col-2 cast">
+      <div class="weather-forecast-date">Thurs</div>
+      <img src="https://openweathermap.org/img/wn/04n@2x.png" width="50px" />
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temp-max">27°</span>
+        <span class="weather-forecast-temp-min">31°</span>
+      </div>
+    </div>
+    <div class="col-2 cast">
+      <div class="weather-forecast-date">Fri</div>
+      <img src="https://openweathermap.org/img/wn/04n@2x.png" width="50px" />
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temp-max">27°</span>
+        <span class="weather-forecast-temp-min">31°</span>
+      </div>
+    </div>
    </div>
    </div>
     <small>

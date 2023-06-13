@@ -46,17 +46,16 @@ function displayTemperature(response){
   );
   }
 
-function search(city){
+function searchCity(city){
 let apiKey="ca018bb33ce911695826269ac51ced9c";
 let apiUrl=`https://api.openweathermap.org/data/2.5/weather?&q=${city}&lat={lat}&lon={lon}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayTemperature);
-
 }
 
 function handleSubmit(event){
   event.preventDefault()
-  let searchInputElement = document.querySelector("#search-input");
-  search(searchInputElement.value);
+  let city = document.querySelector("#search-input").value;
+  searchCity(city);
 }
 
 function displayFahrenheitTemp(event){
@@ -83,4 +82,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 let celciusLink = document.querySelector("#celcius-link")
 celciusLink.addEventListener("click", displayCelciusTemp);
 
-search("Lagos");
+searchCity("Victoria Island");
