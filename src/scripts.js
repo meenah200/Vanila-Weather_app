@@ -11,8 +11,29 @@ function formatDate(timestamp){
   let days =["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
   let day =days[date.getDay()];
   return`${day} ${hours}:${minutes}`;
-
 }
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days =["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+  days.forEach(function (day) {
+  forecastHTML = forecastHTML + 
+  `<div class="col-2 cast">
+      <div class="weather-forecast-date">${day}</div>
+      <img src="https://openweathermap.org/img/wn/04n@2x.png" width="50px" />
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temp-max">27°</span>
+        <span class="weather-forecast-temp-min">31°</span>
+      </div>
+      </div>
+    `;
+    });
+    forecastHTML = forecastHTML + `</div>`;
+
+    forecastElement.innerHTML = forecastHTML;
+};
 
 function displayTemperature(response){ 
   let cityDisplay = response.data.name;
@@ -99,3 +120,4 @@ let celciusLink = document.querySelector("#celcius-link")
 celciusLink.addEventListener("click", displayCelciusTemp);
 
 searchCity("Victoria Island");
+displayForecast();
