@@ -71,6 +71,9 @@ justify-content:flex-end;
   font-size: 13px;
 }
 
+.weather-forecast-temp-min{
+  opacity:0.5;
+}
 .weather{
   color:#FF3300;
 }
@@ -93,5 +96,6 @@ padding:5px;
 
 .cast{
   background-color: #8a98a3;
-  border-radius:45%
+  border-radius:45%;
+  margin-bottom: 5px;
   }
